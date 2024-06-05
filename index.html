@@ -4,24 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
     <title>Innovative Tech Solutions | App Development compony in India</title>
   </head>
   <body>
-    <div class="bg-blue-900 text-white text-sm">
+    <div class="bg-blue-950 text-white text-sm">
       <div
         class="max-w-screen-xl hidden md:flex py-4 mx-auto flex-row justify-between items-center"
       >
         <div class="flex flex-row gap-4">
           <div class="flex flex-row gap-8">
-            <div>
+            <a
+              href="https://www.linkedin.com/company/innovative-tech-solutions-2021"
+              target="_blank"
+            >
               <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-            <div>
+            </a>
+            <a
+              href="https://www.facebook.com/Innovative-tech-solutions-101640422337544/?ref=pages_you_manage"
+              target="_blank"
+            >
               <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div>
+            </a>
+            <a
+              href="https://www.instagram.com/innovative_tech_team11/"
+              target="_blank"
+            >
               <i class="fa-brands fa-instagram"></i>
-            </div>
+            </a>
           </div>
           <p>|</p>
           <div>
@@ -54,69 +64,135 @@
         </div>
       </div>
     </div>
-    <div
-      class="h-16 md:h-24 flex flex-row justify-center bg-white bg-opacity-80"
-    >
+    <div class="sticky top-0 z-10">
       <div
-        class="max-w-screen-xl flex-1 px-5 flex items-center justify-between"
+        class="h-16 md:h-24 flex flex-row justify-center bg-white bg-opacity-80"
       >
-        <a href="/">
-          <img
-            src="./assets/logo.png"
-            class="w-[260px] cursor-pointer"
-            alt="logo"
-          />
-        </a>
-        <div class="md:flex flex-row hidden">
-          <div class="flex flex-col">
-            <a
-              href="/"
-              class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
-              >Home</a
-            >
+        <div
+          class="max-w-screen-xl flex-1 px-5 flex items-center justify-between"
+        >
+          <a href="/"
+            ><img
+              alt="logo"
+              class="w-[163px] md:w-[261px] cursor-pointer"
+              src="/assets/logo.png"
+          /></a>
+          <div>
+            <div class="md:flex flex-row-reverse hidden">
+              <div class="flex flex-col">
+                <a href="/"
+                  ><button
+                    class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
+                  >
+                    Portfolio
+                  </button></a
+                >
+              </div>
+              <div class="flex flex-col">
+                <a href="/"
+                  ><button
+                    class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
+                  >
+                    Project
+                  </button></a
+                >
+              </div>
+              <div class="flex flex-col">
+                <a href="/"
+                  ><button
+                    class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
+                  >
+                    Services
+                  </button></a
+                >
+              </div>
+              <div class="flex flex-col">
+                <a href="/"
+                  ><button
+                    class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
+                  >
+                    About Us
+                  </button></a
+                >
+                <div
+                  class="h-auto bg-white w-auto shadow-2xl absolute top-24 z-10"
+                ></div>
+              </div>
+              <div class="flex flex-col">
+                <a href="/"
+                  ><button
+                    class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
+                  >
+                    Home
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
-          <div class="flex flex-col">
-            <a
-              href="/"
-              class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
-              >About Us</a
-            >
-          </div>
-          <div class="flex flex-col">
-            <a
-              href="/"
-              class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
-              >Services</a
-            >
-          </div>
-          <div class="flex flex-col">
-            <a
-              href="/"
-              class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
-              >Project</a
-            >
-          </div>
-          <div class="flex flex-col">
-            <a
-              href="/"
-              class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
-              >Portfolio</a
-            >
-          </div>
+          <button class="md:hidden block text-2xl" id="humburger">
+            <i class="fa-solid fa-bars" id="icon"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="md:hidden hidden flex flex-col w-4/5 mx-auto justify-center bg-white left-[10%] bg-opacity-80 shadow-2xl py-4 px-6 absolute z-50"
+        id="hidden-menu"
+      >
+        <div
+          class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
+        >
+          <a href="/">Home</a>
+        </div>
+        <div
+          class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
+        >
+          <a href="/">About us</a>
+        </div>
+        <div
+          class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
+        >
+          <a href="/">Services</a>
+        </div>
+        <div
+          class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
+        >
+          <a href="/">Project</a>
+        </div>
+        <div
+          class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
+        >
+          <a href="/">Portfolio</a>
         </div>
       </div>
     </div>
-    <div>
-      <img src="/assets/webslider1.jpg" alt="slider" class="w-full h-screen" />
+    <div class="w-full h-screen relative overflow-hidden">
+      <div
+        class="slide-images absolute w-full transition-all duration-500 ease-in-out"
+      >
+        <img
+          src="/assets/webslider1.jpg"
+          alt="slider"
+          class="w-full h-screen"
+        />
+      </div>
+      <div
+        class="slide-images absolute w-full transition-all duration-500 ease-in-out"
+      >
+        <img
+          src="/assets/webslider2.jpg"
+          alt="slider"
+          class="w-full h-screen"
+        />
+      </div>
     </div>
     <div class="flex flex-row justify-center relative md:-top-10">
       <div
         class="max-w-screen-lg flex flex-1 items-center justify-between flex-col md:flex-row"
       >
         <div
-          class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-500 border-l-8 border-blue-900 py-8 pr-6 pl-6 h-full"
+          class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-550 border-l-8 border-blue-950 py-8 pr-6 pl-6 h-full"
         >
-          <div class="h-12 w-12 bg-blue-900 p-3">
+          <div class="h-12 w-12 bg-blue-950 p-3">
             <img src="/assets/developer.png" alt="developer png" />
           </div>
           <div class="flex flex-col ml-5">
@@ -127,9 +203,9 @@
           </div>
         </div>
         <div
-          class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-900 border-l-8 border-blue-900 py-8 pr-6 pl-6 h-full"
+          class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-950 border-l-8 border-blue-950 py-8 pr-6 pl-6 h-full"
         >
-          <div class="h-12 w-12 bg-blue-500 p-3">
+          <div class="h-12 w-12 bg-blue-550 p-3">
             <img src="/assets/clock.png" alt="clock" />
           </div>
           <div class="flex flex-col ml-5">
@@ -138,9 +214,9 @@
           </div>
         </div>
         <div
-          class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-500 border-r-8 border-blue-900 py-8 pr-6 pl-6 h-full"
+          class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-550 border-r-8 border-blue-950 py-8 pr-6 pl-6 h-full"
         >
-          <div class="h-12 w-12 bg-blue-900 p-3">
+          <div class="h-12 w-12 bg-blue-950 p-3">
             <img src="/assets/system.png" alt="system" />
           </div>
           <div class="flex flex-col ml-5">
@@ -161,11 +237,11 @@
           <img src="/assets/thinkdev.png" alt="thinkdev" />
         </div>
         <div class="w-full md:w-[50%] mx-3">
-          <p class="text-blue-600 md:text-3xl text-2xl mb-4">Do You Need?</p>
+          <p class="text-blue-650 md:text-3xl text-2xl mb-4">Do You Need?</p>
           <div class="sm:text-4xl text-xl font-semibold">
             <h1 class="text-4xl sm:text-5xl">
               Technology Solutions
-              <span class="text-blue-600 font-experience tracking-wide"
+              <span class="text-blue-650 font-experience italic tracking-wide"
                 >To Transform your IMAGINATION</span
               >
             </h1>
@@ -210,50 +286,158 @@
         <hr class="bg-blue-600 p-0.5 w-11 mx-auto pl-0 mt-4 rounded-b-full" />
       </div>
       <div class="px-6 py-6 flex flex-col md:flex-row gap-4 justify-evenly">
-        <div class="flex flex-col justify-center items-center">
-          <div class="h-20 w-20 bg-white p-4">
-            <img src="/assets/itManagement.png" alt="" />
-          </div>
-          <div class="h-[130px] w-1 bg-gray-400"></div>
-          <div
-            class="w-[300px] h-[200px] bg-white p-5 flex flex-col justify-center items-center"
+        <ul class="flex relative w-full h-[500px] overflow-hidden">
+          <li
+            class="w-[306px] md:w-[373px] slide-box absolute transition-all duration-500 ease-in-out"
           >
-            <h1 class="text-2xl font-semibold">IT Management</h1>
-            <p class="mt-5 px-8">
-              Stay ahead of the curve with our IT SERVICES
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-center">
-          <div class="h-20 w-20 bg-white p-4">
-            <img src="/assets/itConsultancy.png" alt="" />
-          </div>
-          <div class="h-[130px] w-1 bg-gray-400"></div>
-          <div
-            class="w-[300px] h-[200px] bg-white p-5 flex flex-col justify-center items-center"
+            <div class="w-full text-center mx-auto mt-10">
+              <div class="flex justify-center items-center">
+                <div class="p-5 shadow-md bg-white">
+                  <a href="#" class="h-10 w-10" target="_self"
+                    ><img
+                      alt="itConsultancy"
+                      class="h-10 w-10"
+                      src="/assets/itConsultancy.png"
+                      style="color: transparent"
+                  /></a>
+                </div>
+              </div>
+              <hr
+                class="transform rotate-90 bg-gray-700 w-1/4 mx-auto mt-10 lg:mt-12 xl:mt-10"
+              />
+              <div
+                class="mt-14 mb-8 mx-8 pt-8 shadow-md cursor-pointer transition duration-500 transform hover:bg-blue-650 hover:text-white h-56 bg-blue-650 sm:bg-white text-white sm:text-black"
+              >
+                <p class="text-2xl font-semibold">IT Consultancy</p>
+                <p class="mt-5 px-8">
+                  Expertise in IT consultancy for the IT companies, for their
+                  different working areas Web-app related.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="w-[306px] md:w-[373px] slide-box absolute transition-all duration-500 ease-in-out"
           >
-            <h1 class="text-2xl font-semibold">IT Consultancy</h1>
-            <p class="mt-5 px-8">
-              Expertise in IT consultancy for the IT companies, for their
-              different working areas Web-app related.
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col justify-center items-center">
-          <div class="h-20 w-20 bg-white p-4">
-            <img src="/assets/cloudService.png" alt="" />
-          </div>
-          <div class="h-[130px] w-1 bg-gray-400"></div>
-          <div
-            class="w-[300px] h-[200px] bg-white p-5 flex flex-col justify-center items-center"
+            <div class="w-full text-center mx-auto mt-10">
+              <div class="flex justify-center items-center">
+                <div
+                  class="p-5 shadow-md bg-white transform transition duration-700 ease-in-out -translate-y-0.5 scale-110"
+                >
+                  <a
+                    href="#"
+                    class="h-10 w-10 transform transition duration-700 ease-in-out -translate-y-0.5 scale-110"
+                    target="_self"
+                    ><img
+                      alt="cloudService"
+                      class="h-10 w-10 transform transition duration-700 ease-in-out -translate-y-0.5 scale-110"
+                      src="/assets/cloudService.png"
+                      style="color: transparent"
+                  /></a>
+                </div>
+              </div>
+              <hr
+                class="transform rotate-90 bg-gray-700 w-1/4 mx-auto mt-10 lg:mt-12 xl:mt-10"
+              />
+              <div
+                class="mt-14 mb-8 mx-8 pt-8 shadow-md cursor-pointer transition duration-500 transform hover:bg-blue-650 hover:text-white h-56 bg-blue-650 sm:bg-white text-white sm:text-black"
+              >
+                <p class="text-2xl font-semibold">Cloud Services</p>
+                <p class="mt-5 px-8">
+                  We develop, migrate and work on web applications to ensure
+                  that they run on capably on clouds.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="w-[306px] md:w-[373px] slide-box absolute transition-all duration-500 ease-in-out"
           >
-            <h1 class="text-2xl font-semibold">Cloud Services</h1>
-            <p class="mt-5 px-8">
-              We develop, migrate and work on web applications to ensure that
-              they run on capably on clouds.
-            </p>
-          </div>
-        </div>
+            <div class="w-full text-center mx-auto mt-10">
+              <div class="flex justify-center items-center">
+                <div class="p-5 shadow-md bg-white">
+                  <a href="#" class="h-10 w-10" target="_self"
+                    ><img
+                      alt="LinkedIn"
+                      class="h-10 w-10"
+                      src="/assets/itManagement.png"
+                      style="color: transparent"
+                  /></a>
+                </div>
+              </div>
+              <hr
+                class="transform rotate-90 bg-gray-700 w-1/4 mx-auto mt-10 lg:mt-12 xl:mt-10"
+              />
+              <div
+                class="mt-14 mb-8 mx-8 pt-8 shadow-md cursor-pointer transition duration-500 transform hover:bg-blue-650 hover:text-white h-56 sm:bg-white bg-blue-650 text-white sm:text-black"
+              >
+                <p class="text-2xl font-semibold">IT Management</p>
+                <p class="mt-5 px-8">
+                  Stay ahead of the curve with our IT SERVICES
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="w-[306px] md:w-[373px] slide-box absolute transition-all duration-500 ease-in-out"
+          >
+            <div class="w-full text-center mx-auto mt-10">
+              <div class="flex justify-center items-center">
+                <div class="p-5 shadow-md bg-white">
+                  <a href="#" rel="noreferrer" class="h-10 w-10" target="_self"
+                    ><img
+                      alt="App Development"
+                      class="h-10 w-10"
+                      src="/assets/cloudService.png"
+                      style="color: transparent"
+                  /></a>
+                </div>
+              </div>
+              <hr
+                class="transform rotate-90 bg-gray-700 w-1/4 mx-auto mt-10 lg:mt-12 xl:mt-10"
+              />
+              <div
+                class="mt-14 mb-8 mx-8 pt-8 shadow-md cursor-pointer transition duration-500 transform hover:bg-blue-650 hover:text-white h-56 bg-blue-650 sm:bg-white text-white sm:text-black"
+              >
+                <p class="text-2xl font-semibold">App. Development</p>
+                <p class="mt-5 px-8">
+                  Expertise in developing application for mobile devices such as
+                  personal digital assistants , enterprise personal assistants.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="w-[306px] md:w-[373px] slide-box absolute transition-all duration-500 ease-in-out"
+          >
+            <div class="w-full text-center mx-auto mt-10">
+              <div class="flex justify-center items-center">
+                <div class="p-5 shadow-md bg-white">
+                  <a href="#" rel="noreferrer" class="h-10 w-10" target="_self"
+                    ><img
+                      alt="Product Design"
+                      class="h-10 w-10"
+                      src="/assets/productDesign.png"
+                      style="color: transparent"
+                  /></a>
+                </div>
+              </div>
+              <hr
+                class="transform rotate-90 bg-gray-700 w-1/4 mx-auto mt-10 lg:mt-12 xl:mt-10"
+              />
+              <div
+                class="mt-14 mb-8 mx-8 pt-8 shadow-md cursor-pointer transition duration-500 transform hover:bg-blue-650 hover:text-white h-56 bg-blue-650 sm:bg-white text-white sm:text-black"
+              >
+                <p class="text-2xl font-semibold">Product Design</p>
+                <p class="mt-5 px-8">
+                  Our firm is expert to create an efficient user interface that
+                  makes end-to-end method of developing with a product by
+                  visualizing and combining what the consumer desires.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="mt-32 flex flex-row justify-center">
@@ -330,14 +514,14 @@
           </p>
           <hr class="bg-blue-650 p-0.5 w-11 mx-auto pl-0 mt-4 rounded-b-full" />
         </div>
-        <div>
+        <div class="flex flex-col md:flex-row">
           <div class="w-full text-center mx-auto my-6">
-            <div class="items-center">
+            <div class="flex flex-row items-center">
               <div class="relative px-12 lg:px-0 xl:px-12 mx-auto">
                 <img
                   src="/assets/step-four.jpeg"
                   alt="step-one"
-                  class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-40"
+                  class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-44"
                 />
                 <div
                   class="absolute left-1/2 bottom-7 lg:-bottom-4 transform -translate-x-1/2 rounded-full bg-blue-600 h-10 w-10 flex justify-center items-center text-white"
@@ -361,7 +545,7 @@
                 <img
                   src="/assets/step-three.jpeg"
                   alt="step-one"
-                  class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-40"
+                  class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-44"
                 />
                 <div
                   class="absolute left-1/2 bottom-7 lg:-bottom-4 transform -translate-x-1/2 rounded-full bg-blue-600 h-10 w-10 flex justify-center items-center text-white"
@@ -369,7 +553,7 @@
                   02
                 </div>
                 <p class="mt-4 text-center font-semibold text-xl lg:absolute">
-                  Choose a service
+                  Request a Meeting
                 </p>
               </div>
               <img
@@ -385,7 +569,7 @@
                 <img
                   src="/assets/step-two.jpeg"
                   alt="step-one"
-                  class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-40"
+                  class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-44"
                 />
                 <div
                   class="absolute left-1/2 bottom-7 lg:-bottom-4 transform -translate-x-1/2 rounded-full bg-blue-600 h-10 w-10 flex justify-center items-center text-white"
@@ -393,7 +577,7 @@
                   03
                 </div>
                 <p class="mt-4 text-center font-semibold text-xl lg:absolute">
-                  Choose a service
+                  Recieve Custom Plan
                 </p>
               </div>
               <img
@@ -417,7 +601,7 @@
                   04
                 </div>
                 <p class="mt-4 text-center font-semibold text-xl lg:absolute">
-                  Choose a service
+                  Let's Make it Happen
                 </p>
               </div>
             </div>
@@ -425,9 +609,40 @@
         </div>
       </div>
     </div>
+    <div class="bg-blue-450 mt-12 flex flex-row justify-center">
+      <div
+        class="max-w-screen-xl flex justify-between flex-col py-12 px-5 md:flex-row lg:flex-row"
+      >
+        <div class="flex justify-between lg:items-center flex-col lg:flex-row">
+          <div class="w-full flex flex-col lg:w-1/2 text-white">
+            <p>We Make Connections</p>
+            <p class="text-4xl font-semibold">
+              Explore recent
+              <span class="italic font-experience">Projects</span>
+            </p>
+          </div>
+          <div class="w-full lg:px-5 text-white">
+            <p class="font-experience">
+              A project is a temporary endeavor with a defined beginning and
+              end, scope, and assigned resources.
+            </p>
+          </div>
+        </div>
+        <div class="mt-5 md:ml-5 mx-auto">
+          <a href="#"
+            ><button
+              class="bg-blue-550 py-3 px-7 text-sm font-semibold text-white border border-white hover:text-blue-500 hover:bg-white transition duration-500 ease-in-out whitespace-nowrap"
+            >
+              Read More
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
     <script
       src="https://kit.fontawesome.com/80b9f8ab25.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/index.js"></script>
   </body>
 </html>
