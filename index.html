@@ -1,11 +1,854 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      .bg-image {
+        background-image: url("/assets/background-images/bgimage-4.jpg");
+      }
+    </style>
+    <title>Innovative Tech Solutions | App Development compony in India</title>
+  </head>
+  <body>
+    <!-- This is upper nav -->
+    <nav class="bg-blue-950 text-white text-sm">
+      <div
+        class="max-w-screen-xl hidden md:flex py-4 mx-auto flex-row justify-between items-center"
+      >
+        <div class="flex flex-row gap-4">
+          <div class="flex flex-row gap-8">
+            <a
+              href="https://www.linkedin.com/company/innovative-tech-solutions-2021"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/Innovative-tech-solutions-101640422337544/?ref=pages_you_manage"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/innovative_tech_team11/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <p>|</p>
+          <div>
+            <p class="font-500">Office Hour: 10:00am - 8:00pm</p>
+          </div>
+        </div>
+        <div class="flex flex-row gap-4">
+          <a href="mailto:sales@innotech.in">
+            <div class="flex flex-row gap-2 items-center">
+              <p>sales@innotechteam.in</p>
+              <p>
+                <i class="fa-regular fa-envelope"></i>
+              </p>
+            </div>
+          </a>
+          <p>|</p>
+          <a
+            href="https://www.google.co.in/maps/place/Innovative+Tech+Solutions/@28.5869574,77.3305404,19z/data=!3m1!4b1!4m5!3m4!1s0x390ce51485efdf73:0xb2f41abf742f30af!8m2!3d28.5869825!4d77.3312191?coh=164777&entry=tt&shorturl=1"
+            target="_blank"
+          >
+            <div class="flex flex-row gap-2 items-center">
+              <p>
+                T-06, 4th Floor, MPV Tower, A7, Sector 10, Noida, U.P.-201301
+              </p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i>
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- This is header with navigation link  -->
+    <header class="sticky top-0 z-10">
+      <div
+        class="h-16 md:h-24 flex flex-row justify-center bg-white bg-opacity-80"
+      >
+        <div
+          class="max-w-screen-xl flex-1 px-5 flex items-center justify-between"
+        >
+          <a href="/"
+            ><img
+              alt="logo"
+              class="w-[163px] md:w-[261px] cursor-pointer"
+              src="/assets/Logo/logo.png"
+          /></a>
+          <div>
+            <div class="md:flex flex-row-reverse hidden">
+              <div class="flex flex-col">
+                <a href="/"
+                  ><button
+                    class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
+                  >
+                    Portfolio
+                  </button></a
+                >
+              </div>
+              <div class="flex flex-col">
+                <a href="/#project"
+                  ><button
+                    class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
+                  >
+                    Project
+                  </button></a
+                >
+              </div>
+              <div class="flex flex-col">
+                <a href="/#services"
+                  ><button
+                    class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
+                  >
+                    Services
+                  </button></a
+                >
+              </div>
+              <div class="flex flex-col">
+                <a href="/#aboutus"
+                  ><button
+                    class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
+                  >
+                    About Us
+                  </button></a
+                >
+                <div
+                  class="h-auto bg-white w-auto shadow-2xl absolute top-24 z-10"
+                ></div>
+              </div>
+              <div class="flex flex-col">
+                <a href="/#home"
+                  ><button
+                    class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
+                  >
+                    Home
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <button class="md:hidden block text-2xl" id="humburger">
+            <i class="fa-solid fa-bars" id="icon"></i>
+          </button>
+        </div>
+      </div>
+      <div
+        class="md:hidden hidden flex flex-col w-4/5 mx-auto justify-center bg-white left-[10%] bg-opacity-80 shadow-2xl py-4 px-6 absolute z-50"
+        id="hidden-menu"
+      >
+        <div
+          class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
+        >
+          <a href="/#home">Home</a>
+        </div>
+        <div
+          class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
+        >
+          <a href="/#aboutus">About us</a>
+        </div>
+        <div
+          class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
+        >
+          <a href="/#services">Services</a>
+        </div>
+        <div
+          class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
+        >
+          <a href="/#project">Project</a>
+        </div>
+        <div
+          class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
+        >
+          <a href="/">Portfolio</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- This is home page section  -->
+    <section id="home" class="w-full h-screen relative overflow-hidden">
+      <div
+        class="slide-images absolute w-full transition-all duration-500 ease-in-out"
+      >
+        <img
+          src="/assets/Webslider-images/webslider1.jpg"
+          alt="slider"
+          class="w-full h-screen"
+        />
+      </div>
+      <div
+        class="slide-images absolute w-full transition-all duration-500 ease-in-out"
+      >
+        <img
+          src="/assets/Webslider-images/webslider2.jpg"
+          alt="slider"
+          class="w-full h-screen"
+        />
+      </div>
+    </section>
+
+    <!-- This is out Support Section  -->
+    <div class="flex flex-row justify-center relative md:-top-10">
+      <div
+        class="max-w-screen-lg flex flex-1 items-center justify-between flex-col md:flex-row"
+      >
+        <div
+          class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-550 border-l-8 border-blue-950 py-8 pr-6 pl-6 h-full"
+        >
+          <div class="h-12 w-12 bg-blue-950 p-3">
+            <img src="/assets/Icon-images/developer.png" alt="developer png" />
+          </div>
+          <div class="flex flex-col ml-5">
+            <p class="text-xl font-medium text-white">Expert & Professional</p>
+            <p class="text-sm font-light text-white">
+              We Are Trusted by Our Customers
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-950 border-l-8 border-blue-950 py-8 pr-6 pl-6 h-full"
+        >
+          <div class="h-12 w-12 bg-blue-550 p-3">
+            <img src="/assets/Icon-images/clock.png" alt="clock" />
+          </div>
+          <div class="flex flex-col ml-5">
+            <p class="text-xl font-medium text-white">Support 24/7</p>
+            <p class="text-sm font-light text-white">+91 7011639844</p>
+          </div>
+        </div>
+        <div
+          class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-550 border-r-8 border-blue-950 py-8 pr-6 pl-6 h-full"
+        >
+          <div class="h-12 w-12 bg-blue-950 p-3">
+            <img src="/assets/Icon-images/system.png" alt="system" />
+          </div>
+          <div class="flex flex-col ml-5">
+            <p class="text-xl font-medium text-white">Trusted Services</p>
+            <p class="text-sm font-light text-white">
+              We Are Trusted by Our Customers
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is About section  -->
+    <section id="aboutus" class="mx-auto max-w-screen-xl my-4">
+      <div class="flex flex-col md:flex-row">
+        <div
+          class="w-full md:w-[50%] flex flex-col justify-center items-center"
+        >
+          <img src="/assets/Icon-images/developing1.png" alt="developing" />
+          <img src="/assets/Icon-images/thinkdev.png" alt="thinkdev" />
+        </div>
+        <div class="w-full md:w-[50%] mx-3">
+          <p class="text-blue-650 md:text-3xl text-2xl mb-4">Do You Need?</p>
+          <div class="sm:text-4xl text-xl font-semibold">
+            <h1 class="text-4xl sm:text-5xl">
+              Technology Solutions
+              <span class="text-blue-650 font-experience italic tracking-wide"
+                >To Transform your IMAGINATION</span
+              >
+            </h1>
+          </div>
+          <div class="text-gray-500 text-lg">
+            <p class="my-4">
+              Innovative Tech Solutions is a trailblazer in the technology
+              industry, providing cutting-edge solutions that enable its clients
+              to stay ahead of the game. With a strong emphasis on innovation
+              and a team of highly skilled professionals, Innovative Tech
+              Solutions is dedicated to solving the most complex technological
+              challenges faced by businesses across diverse sectors. The
+              company's services cover the entire spectrum of the technology
+              landscape, from software development to cloud computing.
+              Innovative Tech Solutions are designed to add value to businesses,
+              streamline processes, enhance customer experiences, and drive
+              profitability. With a relentless focus on quality and customer
+              satisfaction, Innovative Tech Solutions is the go-to partner for
+              businesses looking to stay ahead of the curve in today's rapidly
+              evolving digital world.
+            </p>
+          </div>
+          <hr class="mt-b mb-4" />
+          <p class="text-center">
+            <a class="font-extrabold" href="tel:7011639844">+91 7011639844 : </a
+            >Get in touch
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- This is services section  -->
+    <section
+      id="services"
+      class="pt-5 mx-auto max-w-screen-xl lg:px-20 bg-blue-50"
+    >
+      <div class="text-center">
+        <p class="text-blue-600 text-lg mb-6">Our Services</p>
+        <h1 class="text-4xl font-extrabold">
+          We run all kinds of services in form of
+        </h1>
+        <p
+          class="text-4xl text-blue-600 font-extrabold font-experience italic tracking-wide"
+        >
+          information & Technologies
+        </p>
+        <hr class="bg-blue-600 p-0.5 w-11 mx-auto pl-0 mt-4 rounded-b-full" />
+      </div>
+      <div class="px-6 py-6 flex flex-col md:flex-row gap-4 justify-evenly">
+        <ul class="flex relative w-full h-[500px] overflow-hidden">
+          <li
+            class="w-[306px] md:w-[373px] slide-box absolute transition-all duration-500 ease-in-out"
+          >
+            <div class="w-full text-center mx-auto mt-10">
+              <div class="flex justify-center items-center">
+                <div class="p-5 shadow-md bg-white">
+                  <a href="#" class="h-10 w-10" target="_self"
+                    ><img
+                      alt="itConsultancy"
+                      class="h-10 w-10"
+                      src="/assets/Services-images/itConsultancy.png"
+                      style="color: transparent"
+                  /></a>
+                </div>
+              </div>
+              <hr
+                class="transform rotate-90 bg-gray-700 w-1/4 mx-auto mt-10 lg:mt-12 xl:mt-10"
+              />
+              <div
+                class="mt-14 mb-8 mx-8 pt-8 shadow-md cursor-pointer transition duration-500 transform hover:bg-blue-650 hover:text-white h-56 bg-blue-650 sm:bg-white text-white sm:text-black"
+              >
+                <p class="text-2xl font-semibold">IT Consultancy</p>
+                <p class="mt-5 px-8">
+                  Expertise in IT consultancy for the IT companies, for their
+                  different working areas Web-app related.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="w-[306px] md:w-[373px] slide-box absolute transition-all duration-500 ease-in-out"
+          >
+            <div class="w-full text-center mx-auto mt-10">
+              <div class="flex justify-center items-center">
+                <div
+                  class="p-5 shadow-md bg-white transform transition duration-700 ease-in-out -translate-y-0.5 scale-110"
+                >
+                  <a
+                    href="#"
+                    class="h-10 w-10 transform transition duration-700 ease-in-out -translate-y-0.5 scale-110"
+                    target="_self"
+                    ><img
+                      alt="cloudService"
+                      class="h-10 w-10 transform transition duration-700 ease-in-out -translate-y-0.5 scale-110"
+                      src="/assets/Services-images/cloudService.png"
+                      style="color: transparent"
+                  /></a>
+                </div>
+              </div>
+              <hr
+                class="transform rotate-90 bg-gray-700 w-1/4 mx-auto mt-10 lg:mt-12 xl:mt-10"
+              />
+              <div
+                class="mt-14 mb-8 mx-8 pt-8 shadow-md cursor-pointer transition duration-500 transform hover:bg-blue-650 hover:text-white h-56 bg-blue-650 sm:bg-white text-white sm:text-black"
+              >
+                <p class="text-2xl font-semibold">Cloud Services</p>
+                <p class="mt-5 px-8">
+                  We develop, migrate and work on web applications to ensure
+                  that they run on capably on clouds.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="w-[306px] md:w-[373px] slide-box absolute transition-all duration-500 ease-in-out"
+          >
+            <div class="w-full text-center mx-auto mt-10">
+              <div class="flex justify-center items-center">
+                <div class="p-5 shadow-md bg-white">
+                  <a href="#" class="h-10 w-10" target="_self"
+                    ><img
+                      alt="LinkedIn"
+                      class="h-10 w-10"
+                      src="/assets/Services-images/itManagement.png"
+                      style="color: transparent"
+                  /></a>
+                </div>
+              </div>
+              <hr
+                class="transform rotate-90 bg-gray-700 w-1/4 mx-auto mt-10 lg:mt-12 xl:mt-10"
+              />
+              <div
+                class="mt-14 mb-8 mx-8 pt-8 shadow-md cursor-pointer transition duration-500 transform hover:bg-blue-650 hover:text-white h-56 sm:bg-white bg-blue-650 text-white sm:text-black"
+              >
+                <p class="text-2xl font-semibold">IT Management</p>
+                <p class="mt-5 px-8">
+                  Stay ahead of the curve with our IT SERVICES
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="w-[306px] md:w-[373px] slide-box absolute transition-all duration-500 ease-in-out"
+          >
+            <div class="w-full text-center mx-auto mt-10">
+              <div class="flex justify-center items-center">
+                <div class="p-5 shadow-md bg-white">
+                  <a href="#" rel="noreferrer" class="h-10 w-10" target="_self"
+                    ><img
+                      alt="App Development"
+                      class="h-10 w-10"
+                      src="/assets/Services-images/cloudService.png"
+                      style="color: transparent"
+                  /></a>
+                </div>
+              </div>
+              <hr
+                class="transform rotate-90 bg-gray-700 w-1/4 mx-auto mt-10 lg:mt-12 xl:mt-10"
+              />
+              <div
+                class="mt-14 mb-8 mx-8 pt-8 shadow-md cursor-pointer transition duration-500 transform hover:bg-blue-650 hover:text-white h-56 bg-blue-650 sm:bg-white text-white sm:text-black"
+              >
+                <p class="text-2xl font-semibold">App. Development</p>
+                <p class="mt-5 px-8">
+                  Expertise in developing application for mobile devices such as
+                  personal digital assistants , enterprise personal assistants.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li
+            class="w-[306px] md:w-[373px] slide-box absolute transition-all duration-500 ease-in-out"
+          >
+            <div class="w-full text-center mx-auto mt-10">
+              <div class="flex justify-center items-center">
+                <div class="p-5 shadow-md bg-white">
+                  <a href="#" rel="noreferrer" class="h-10 w-10" target="_self"
+                    ><img
+                      alt="Product Design"
+                      class="h-10 w-10"
+                      src="/assets/Services-images/productDesign.png"
+                      style="color: transparent"
+                  /></a>
+                </div>
+              </div>
+              <hr
+                class="transform rotate-90 bg-gray-700 w-1/4 mx-auto mt-10 lg:mt-12 xl:mt-10"
+              />
+              <div
+                class="mt-14 mb-8 mx-8 pt-8 shadow-md cursor-pointer transition duration-500 transform hover:bg-blue-650 hover:text-white h-56 bg-blue-650 sm:bg-white text-white sm:text-black"
+              >
+                <p class="text-2xl font-semibold">Product Design</p>
+                <p class="mt-5 px-8">
+                  Our firm is expert to create an efficient user interface that
+                  makes end-to-end method of developing with a product by
+                  visualizing and combining what the consumer desires.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- This is leadersship section  -->
+    <div class="mt-32 flex flex-row justify-center">
+      <div
+        class="max-w-screen-xl flex justify-between flex-col px-5 md:flex-row lg:flex-row"
+      >
+        <div class="flex justify-between lg:items-center flex-col lg:flex-row">
+          <div class="w-full flex flex-col lg:w-1/2">
+            <p class="w-full flex flex-col lg:w-1/2">About Us</p>
+            <p class="font-semibold text-3xl text-gray-800 text-left">
+              Meet Our
+              <span
+                class="font-semibold text-3xl text-blue-500 font-experience italic tracking-wide"
+                >Leadership</span
+              >
+            </p>
+          </div>
+          <div class="w-full lg:px-5">
+            <p class="font-normal text-base text-gray-500 text-left mt-3">
+              From Good to Great : The leadership take our company to new
+              heights.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Details of Our Leader -->
+    <div class="mt-8 mx-auto max-w-screen-xl xl:px-10 lg:px-10">
+      <div
+        class="flex items-center flex-col md:flex-row relative overflow-hidden md:justify-center"
+      >
+        <div class="w-[400px] relative flex">
+          <div class="mx-4 relative">
+            <div>
+              <img
+                src="/assets/Mentor-images/yuvraj.jpeg"
+                alt="Yuvraj singh"
+                class="w-screen object-cover h-[400px]"
+              />
+            </div>
+            <div
+              class="flex flex-col jusitfy-center items-center bg-white py-4 transition-all duration-500 ease-in-out mx-3 relative -top-8 shadow-sm border-b-4 border-blue-450 border-b-4 border-white md:border-0"
+            >
+              <p class="font-semibold">Yuvraj Singh</p>
+              <p class="text-gray-500">CEO & Co-Founder</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-[400px] relative flex">
+          <div class="mx-4 relative">
+            <div>
+              <img
+                src="/assets/Mentor-images/surbhi.jpeg"
+                class="w-screen object-cover h-[400px]"
+                alt="Yuvraj singh"
+              />
+            </div>
+            <div
+              class="flex flex-col jusitfy-center items-center bg-white py-4 transition-all duration-500 ease-in-out mx-3 relative -top-8 shadow-sm border-b-4 border-blue-450 border-b-4 border-white md:border-0"
+            >
+              <p class="font-semibold">Surbhi Singh</p>
+              <p class="text-gray-500">COO & Vice President</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is process section -->
+    <section id="process" class="flex justify-center my-12">
+      <div class="max-w-screen-xl">
+        <div class="text-center">
+          <p class="text-blue-600 text-xl">How It Works</p>
+          <p class="text-4xl font-experience font-semibold">
+            <span class="text-blue-900">Check Out Our Work</span>
+            <span class="text-blue-600 italic">Process</span>
+          </p>
+          <hr class="bg-blue-650 p-0.5 w-11 mx-auto pl-0 mt-4 rounded-b-full" />
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <div class="w-full text-center mx-auto my-6">
+            <div class="flex flex-row items-center">
+              <div class="relative px-12 lg:px-0 xl:px-12 mx-auto">
+                <img
+                  src="/assets/Icon-images/step-four.jpeg"
+                  alt="step-one"
+                  class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-44"
+                />
+                <div
+                  class="absolute left-1/2 bottom-7 lg:-bottom-4 transform -translate-x-1/2 rounded-full bg-blue-600 h-10 w-10 flex justify-center items-center text-white"
+                >
+                  01
+                </div>
+                <p class="mt-4 text-center font-semibold text-xl lg:absolute">
+                  Choose a service
+                </p>
+              </div>
+              <img
+                src="/assets/Icon-images/process-arrow.png"
+                alt="arrow"
+                class="hidden lg:flex"
+              />
+            </div>
+          </div>
+          <div class="w-full text-center mx-auto my-6">
+            <div class="flex flex-row items-center">
+              <div class="relative px-12 lg:px-0 xl:px-12 mx-auto">
+                <img
+                  src="/assets/Icon-images/step-three.jpeg"
+                  alt="step-one"
+                  class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-44"
+                />
+                <div
+                  class="absolute left-1/2 bottom-7 lg:-bottom-4 transform -translate-x-1/2 rounded-full bg-blue-600 h-10 w-10 flex justify-center items-center text-white"
+                >
+                  02
+                </div>
+                <p class="mt-4 text-center font-semibold text-xl lg:absolute">
+                  Request a Meeting
+                </p>
+              </div>
+              <img
+                src="/assets/Icon-images/process-arrow.png"
+                alt="arrow"
+                class="hidden lg:flex"
+              />
+            </div>
+          </div>
+          <div class="w-full text-center mx-auto my-6">
+            <div class="flex flex-row items-center">
+              <div class="relative px-12 lg:px-0 xl:px-12 mx-auto">
+                <img
+                  src="/assets/Icon-images/step-two.jpeg"
+                  alt="step-one"
+                  class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-44"
+                />
+                <div
+                  class="absolute left-1/2 bottom-7 lg:-bottom-4 transform -translate-x-1/2 rounded-full bg-blue-600 h-10 w-10 flex justify-center items-center text-white"
+                >
+                  03
+                </div>
+                <p class="mt-4 text-center font-semibold text-xl lg:absolute">
+                  Recieve Custom Plan
+                </p>
+              </div>
+              <img
+                src="/assets/Icon-images/process-arrow.png"
+                alt="arrow"
+                class="hidden lg:flex"
+              />
+            </div>
+          </div>
+          <div class="w-full text-center mx-auto my-6">
+            <div class="flex flex-row items-center">
+              <div class="relative px-12 lg:px-0 xl:px-12 mx-auto">
+                <img
+                  src="/assets/Icon-images/step-one.jpeg"
+                  alt="step-one"
+                  class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-40"
+                />
+                <div
+                  class="absolute left-1/2 bottom-7 lg:-bottom-4 transform -translate-x-1/2 rounded-full bg-blue-600 h-10 w-10 flex justify-center items-center text-white"
+                >
+                  04
+                </div>
+                <p class="mt-4 text-center font-semibold text-xl lg:absolute">
+                  Let's Make it Happen
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- This is explore section  -->
+    <div class="bg-blue-450 mt-12 flex flex-row justify-center">
+      <div
+        class="max-w-screen-xl flex justify-between flex-col py-12 px-5 md:flex-row lg:flex-row"
+      >
+        <div class="flex justify-between lg:items-center flex-col lg:flex-row">
+          <div class="w-full flex flex-col lg:w-1/2 text-white">
+            <p>We Make Connections</p>
+            <p class="text-4xl font-semibold">
+              Explore recent
+              <span class="italic font-experience">Projects</span>
+            </p>
+          </div>
+          <div class="w-full lg:px-5 text-white">
+            <p class="font-experience">
+              A project is a temporary endeavor with a defined beginning and
+              end, scope, and assigned resources.
+            </p>
+          </div>
+        </div>
+        <div class="mt-5 md:ml-5 mx-auto">
+          <a href="#"
+            ><button
+              class="bg-blue-550 py-3 px-7 text-sm font-semibold text-white border border-white hover:text-blue-500 hover:bg-white transition duration-500 ease-in-out whitespace-nowrap"
+            >
+              Read More
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- This is testonomial section -->
+    <div id="service" class="mt-5 mx-auto max-w-screen-xl">
+      <div class="bg-image bg-no-repeat bg-top bg-auto">
+        <div
+          class="bg-blue-950 bg-opacity-80 py-32 flex flex-col justify-center"
+        >
+          <div class="md:w-1/2 w-full mx-auto">
+            <p
+              class="text-4xl text-white text-center font-extrabold py-32 px-4"
+            >
+              Stay ahead of the curve with our IT SERVICES
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="-mt-24 grid md:grid-cols-2 grid-cols-1 md:mx-24 mx-0">
+        <div class="p-8 bg-blue-900 relative overflow-hidden flex items-center jusitfy-center">
+          <div
+            class="bg-blue-900 flex-auto top-0 left-0 absolute transform duration-300 testonomial text-center text-gray-300 p-8 w-full mx-auto"
+          >
+            <img
+              src="assets/Mentor-images/yuvraj.jpeg"
+              alt="profileImg"
+              class="mx-auto rounded-full border-8 h-40 w-40 object-cover border-white"
+            />
+            <blockquote class="mt-6 text-lg">
+              I am passionate about building excellent software that improves
+              the lives of those around me. I specialize in creating software
+              for clients ranging from individuals and small-businesses all the
+              way to large enterprise corporations.
+            </blockquote>
+            <div class="flex justify-center my-4">
+              <a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png"
+              /></a>
+              <a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png"
+              /></a>
+            </div>
+            <p class="text-lg font-semibold">Yuvraj Singh</p>
+            <p class="text-sm">Full Stack Developer</p>
+          </div>
+          <div 
+            class="bg-blue-900 flex-auto top-0 left-0 absolute transform duration-300 testonomial text-center text-gray-300 p-8 w-full mx-auto"
+          >
+            <img
+              src="assets/Mentor-images/dev3.jpeg"
+              alt="profileImg"
+              class="mx-auto rounded-full border-8 h-40 w-40 object-cover border-white"
+            />
+            <blockquote class="mt-6 text-lg">
+              I'm a full stack developer with a focus on the MERN stack, exploring other technologies and frameworks that catch my interest!
+            </blockquote>
+            <div class="flex justify-center my-4">
+              <a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png"
+              /></a>
+              <a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png"
+              /></a>
+            </div>
+            <p class="text-lg font-semibold">Saurabh Kumar</p>
+            <p class="text-sm">Full Stack Developer</p>
+          </div>
+        </div>
+        <div class="bg-blue-950 text-left text-white px-8 py-16 lg:p-16">
+          <p class="font-semibold text-2xl"></p>
+          <p class="text-4xl font-semibold">
+            We help you to grow your business
+            <span class="italic font-experience">Exponentially</span>
+          </p>
+          <hr class="bg-white rounded-b-full p-0.5 w-12 mt-4" />
+          <div>
+            <div class="flex justify-between mt-12">
+              <p>90%</p>
+              <p>UI/UX Design</p>
+            </div>
+            <div class="flex mt-2 items-center">
+              <hr class="p-1 bg-blue-600 w-5/6 border-none" />
+              <span
+                class="rounded-full h-4 w-4 bg-blue-600 border-2 border-white"
+              ></span>
+              <hr class="p-1 bg-white w-1/6 border-none" />
+            </div>
+            <div class="flex justify-between mt-12">
+              <p>80%</p>
+              <p>App Development</p>
+            </div>
+            <div class="flex mt-2 items-center">
+              <hr class="p-1 bg-blue-600 w-3/4 border-none" />
+              <span
+                class="rounded-full h-4 w-4 bg-blue-600 border-2 border-white"
+              ></span>
+              <hr class="p-1 bg-white w-1/4 border-none" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact">
+      <div class="bg-blue-900 py-12 mt-4">
+        <div
+          class="flex md:flex-row md:justify-between max-w-screen-xl mx-auto items-center px-5 xl:px-8 flex-col"
+        >
+          <div class="flex flex-row items-center">
+            <a
+              href="https://goo.gl/maps/cn7CnGxzd6P9Mcuo7"
+              class="flex flex-row items-center text-white"
+              target="_blank"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="text-gray-200 ml-2">
+                T-06, 4th Floor, MPV Tower, A7, Sector 10, Noida, U.P.-201301
+              </p></a
+            >
+          </div>
+          <div class="my-5 md:my-0">
+            <img alt="logo" class="w-[260px]" src="/assets/Logo/logo (1).png" />
+          </div>
+          <div>
+            <a href="mailto:sales@innotechteam.in"
+              ><button
+                class="border text-white border-white mx-auto text-base h-12 px-3 p-1.5 transform duration-500 hover:bg-white hover:text-black font-semibold"
+              >
+                sales@innotechteam.in
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/80b9f8ab25.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript/hamBurger.js"></script>
+    <script src="javascript/homeSlider.js"></script>
+    <script src="javascript/servicesBoxSlider.js"></script>
+    <script src="javascript/testonomialSlider.js"></script>
+  </body>
 </html>
