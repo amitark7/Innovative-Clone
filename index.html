@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css" />
+    <style>
+      .bg-image {
+        background-image: url("/assets/background-images/bgimage-4.jpg");
+      }
+    </style>
     <title>Innovative Tech Solutions | App Development compony in India</title>
   </head>
   <body>
-    <div class="bg-blue-950 text-white text-sm">
+    <!-- This is upper nav -->
+    <nav class="bg-blue-950 text-white text-sm">
       <div
         class="max-w-screen-xl hidden md:flex py-4 mx-auto flex-row justify-between items-center"
       >
@@ -63,8 +69,10 @@
           </a>
         </div>
       </div>
-    </div>
-    <div class="sticky top-0 z-10">
+    </nav>
+
+    <!-- This is header with navigation link  -->
+    <header class="sticky top-0 z-10">
       <div
         class="h-16 md:h-24 flex flex-row justify-center bg-white bg-opacity-80"
       >
@@ -75,7 +83,7 @@
             ><img
               alt="logo"
               class="w-[163px] md:w-[261px] cursor-pointer"
-              src="/assets/logo.png"
+              src="/assets/Logo/logo.png"
           /></a>
           <div>
             <div class="md:flex flex-row-reverse hidden">
@@ -89,7 +97,7 @@
                 >
               </div>
               <div class="flex flex-col">
-                <a href="/"
+                <a href="/#project"
                   ><button
                     class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
                   >
@@ -98,7 +106,7 @@
                 >
               </div>
               <div class="flex flex-col">
-                <a href="/"
+                <a href="/#services"
                   ><button
                     class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
                   >
@@ -107,7 +115,7 @@
                 >
               </div>
               <div class="flex flex-col">
-                <a href="/"
+                <a href="/#aboutus"
                   ><button
                     class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
                   >
@@ -119,7 +127,7 @@
                 ></div>
               </div>
               <div class="flex flex-col">
-                <a href="/"
+                <a href="/#home"
                   ><button
                     class="h-24 font-semibold flex items-center cursor-pointer px-4 border-white hover:border-blue-950 border-b-2 hover:text-blue-900"
                   >
@@ -141,22 +149,22 @@
         <div
           class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
         >
-          <a href="/">Home</a>
+          <a href="/#home">Home</a>
         </div>
         <div
           class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
         >
-          <a href="/">About us</a>
+          <a href="/#aboutus">About us</a>
         </div>
         <div
           class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
         >
-          <a href="/">Services</a>
+          <a href="/#services">Services</a>
         </div>
         <div
           class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
         >
-          <a href="/">Project</a>
+          <a href="/#project">Project</a>
         </div>
         <div
           class="flex justify-end text-xl border-b border-gray-200 py-3 cursor-pointer font-black hover:text-blue-550 z-50"
@@ -164,13 +172,15 @@
           <a href="/">Portfolio</a>
         </div>
       </div>
-    </div>
-    <div class="w-full h-screen relative overflow-hidden">
+    </header>
+
+    <!-- This is home page section  -->
+    <section id="home" class="w-full h-screen relative overflow-hidden">
       <div
         class="slide-images absolute w-full transition-all duration-500 ease-in-out"
       >
         <img
-          src="/assets/webslider1.jpg"
+          src="/assets/Webslider-images/webslider1.jpg"
           alt="slider"
           class="w-full h-screen"
         />
@@ -179,12 +189,14 @@
         class="slide-images absolute w-full transition-all duration-500 ease-in-out"
       >
         <img
-          src="/assets/webslider2.jpg"
+          src="/assets/Webslider-images/webslider2.jpg"
           alt="slider"
           class="w-full h-screen"
         />
       </div>
-    </div>
+    </section>
+
+    <!-- This is out Support Section  -->
     <div class="flex flex-row justify-center relative md:-top-10">
       <div
         class="max-w-screen-lg flex flex-1 items-center justify-between flex-col md:flex-row"
@@ -193,7 +205,7 @@
           class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-550 border-l-8 border-blue-950 py-8 pr-6 pl-6 h-full"
         >
           <div class="h-12 w-12 bg-blue-950 p-3">
-            <img src="/assets/developer.png" alt="developer png" />
+            <img src="/assets/Icon-images/developer.png" alt="developer png" />
           </div>
           <div class="flex flex-col ml-5">
             <p class="text-xl font-medium text-white">Expert & Professional</p>
@@ -206,7 +218,7 @@
           class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-950 border-l-8 border-blue-950 py-8 pr-6 pl-6 h-full"
         >
           <div class="h-12 w-12 bg-blue-550 p-3">
-            <img src="/assets/clock.png" alt="clock" />
+            <img src="/assets/Icon-images/clock.png" alt="clock" />
           </div>
           <div class="flex flex-col ml-5">
             <p class="text-xl font-medium text-white">Support 24/7</p>
@@ -217,7 +229,7 @@
           class="w-full md:flex-1 flex flex-row justify-start items-center bg-blue-550 border-r-8 border-blue-950 py-8 pr-6 pl-6 h-full"
         >
           <div class="h-12 w-12 bg-blue-950 p-3">
-            <img src="/assets/system.png" alt="system" />
+            <img src="/assets/Icon-images/system.png" alt="system" />
           </div>
           <div class="flex flex-col ml-5">
             <p class="text-xl font-medium text-white">Trusted Services</p>
@@ -228,13 +240,15 @@
         </div>
       </div>
     </div>
-    <div class="mx-auto max-w-screen-xl my-4">
+
+    <!-- This is About section  -->
+    <section id="aboutus" class="mx-auto max-w-screen-xl my-4">
       <div class="flex flex-col md:flex-row">
         <div
           class="w-full md:w-[50%] flex flex-col justify-center items-center"
         >
-          <img src="/assets/developing1.png" alt="developing" />
-          <img src="/assets/thinkdev.png" alt="thinkdev" />
+          <img src="/assets/Icon-images/developing1.png" alt="developing" />
+          <img src="/assets/Icon-images/thinkdev.png" alt="thinkdev" />
         </div>
         <div class="w-full md:w-[50%] mx-3">
           <p class="text-blue-650 md:text-3xl text-2xl mb-4">Do You Need?</p>
@@ -271,8 +285,13 @@
           </p>
         </div>
       </div>
-    </div>
-    <div class="pt-5 mx-auto max-w-screen-xl lg:px-20 bg-blue-50">
+    </section>
+
+    <!-- This is services section  -->
+    <section
+      id="services"
+      class="pt-5 mx-auto max-w-screen-xl lg:px-20 bg-blue-50"
+    >
       <div class="text-center">
         <p class="text-blue-600 text-lg mb-6">Our Services</p>
         <h1 class="text-4xl font-extrabold">
@@ -297,7 +316,7 @@
                     ><img
                       alt="itConsultancy"
                       class="h-10 w-10"
-                      src="/assets/itConsultancy.png"
+                      src="/assets/Services-images/itConsultancy.png"
                       style="color: transparent"
                   /></a>
                 </div>
@@ -331,7 +350,7 @@
                     ><img
                       alt="cloudService"
                       class="h-10 w-10 transform transition duration-700 ease-in-out -translate-y-0.5 scale-110"
-                      src="/assets/cloudService.png"
+                      src="/assets/Services-images/cloudService.png"
                       style="color: transparent"
                   /></a>
                 </div>
@@ -360,7 +379,7 @@
                     ><img
                       alt="LinkedIn"
                       class="h-10 w-10"
-                      src="/assets/itManagement.png"
+                      src="/assets/Services-images/itManagement.png"
                       style="color: transparent"
                   /></a>
                 </div>
@@ -388,7 +407,7 @@
                     ><img
                       alt="App Development"
                       class="h-10 w-10"
-                      src="/assets/cloudService.png"
+                      src="/assets/Services-images/cloudService.png"
                       style="color: transparent"
                   /></a>
                 </div>
@@ -417,7 +436,7 @@
                     ><img
                       alt="Product Design"
                       class="h-10 w-10"
-                      src="/assets/productDesign.png"
+                      src="/assets/Services-images/productDesign.png"
                       style="color: transparent"
                   /></a>
                 </div>
@@ -439,7 +458,9 @@
           </li>
         </ul>
       </div>
-    </div>
+    </section>
+
+    <!-- This is leadersship section  -->
     <div class="mt-32 flex flex-row justify-center">
       <div
         class="max-w-screen-xl flex justify-between flex-col px-5 md:flex-row lg:flex-row"
@@ -464,6 +485,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Details of Our Leader -->
     <div class="mt-8 mx-auto max-w-screen-xl xl:px-10 lg:px-10">
       <div
         class="flex items-center flex-col md:flex-row relative overflow-hidden md:justify-center"
@@ -472,7 +495,7 @@
           <div class="mx-4 relative">
             <div>
               <img
-                src="/assets/yuvraj.jpeg"
+                src="/assets/Mentor-images/yuvraj.jpeg"
                 alt="Yuvraj singh"
                 class="w-screen object-cover h-[400px]"
               />
@@ -489,7 +512,7 @@
           <div class="mx-4 relative">
             <div>
               <img
-                src="/assets/surbhi.jpeg"
+                src="/assets/Mentor-images/surbhi.jpeg"
                 class="w-screen object-cover h-[400px]"
                 alt="Yuvraj singh"
               />
@@ -504,7 +527,9 @@
         </div>
       </div>
     </div>
-    <div class="flex justify-center my-12">
+
+    <!-- This is process section -->
+    <section id="process" class="flex justify-center my-12">
       <div class="max-w-screen-xl">
         <div class="text-center">
           <p class="text-blue-600 text-xl">How It Works</p>
@@ -519,7 +544,7 @@
             <div class="flex flex-row items-center">
               <div class="relative px-12 lg:px-0 xl:px-12 mx-auto">
                 <img
-                  src="/assets/step-four.jpeg"
+                  src="/assets/Icon-images/step-four.jpeg"
                   alt="step-one"
                   class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-44"
                 />
@@ -533,7 +558,7 @@
                 </p>
               </div>
               <img
-                src="/assets/process-arrow.png"
+                src="/assets/Icon-images/process-arrow.png"
                 alt="arrow"
                 class="hidden lg:flex"
               />
@@ -543,7 +568,7 @@
             <div class="flex flex-row items-center">
               <div class="relative px-12 lg:px-0 xl:px-12 mx-auto">
                 <img
-                  src="/assets/step-three.jpeg"
+                  src="/assets/Icon-images/step-three.jpeg"
                   alt="step-one"
                   class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-44"
                 />
@@ -557,7 +582,7 @@
                 </p>
               </div>
               <img
-                src="/assets/process-arrow.png"
+                src="/assets/Icon-images/process-arrow.png"
                 alt="arrow"
                 class="hidden lg:flex"
               />
@@ -567,7 +592,7 @@
             <div class="flex flex-row items-center">
               <div class="relative px-12 lg:px-0 xl:px-12 mx-auto">
                 <img
-                  src="/assets/step-two.jpeg"
+                  src="/assets/Icon-images/step-two.jpeg"
                   alt="step-one"
                   class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-44"
                 />
@@ -581,7 +606,7 @@
                 </p>
               </div>
               <img
-                src="/assets/process-arrow.png"
+                src="/assets/Icon-images/process-arrow.png"
                 alt="arrow"
                 class="hidden lg:flex"
               />
@@ -591,7 +616,7 @@
             <div class="flex flex-row items-center">
               <div class="relative px-12 lg:px-0 xl:px-12 mx-auto">
                 <img
-                  src="/assets/step-one.jpeg"
+                  src="/assets/Icon-images/step-one.jpeg"
                   alt="step-one"
                   class="mx-auto rounded-full border-4 transform duration-300 hover:border-blue-600 p-3 h-40 w-40"
                 />
@@ -608,7 +633,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- This is explore section  -->
     <div class="bg-blue-450 mt-12 flex flex-row justify-center">
       <div
         class="max-w-screen-xl flex justify-between flex-col py-12 px-5 md:flex-row lg:flex-row"
@@ -639,10 +666,189 @@
         </div>
       </div>
     </div>
+
+    <!-- This is testonomial section -->
+    <div id="service" class="mt-5 mx-auto max-w-screen-xl">
+      <div class="bg-image bg-no-repeat bg-top bg-auto">
+        <div
+          class="bg-blue-950 bg-opacity-80 py-32 flex flex-col justify-center"
+        >
+          <div class="md:w-1/2 w-full mx-auto">
+            <p
+              class="text-4xl text-white text-center font-extrabold py-32 px-4"
+            >
+              Stay ahead of the curve with our IT SERVICES
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="-mt-24 grid md:grid-cols-2 grid-cols-1 md:mx-24 mx-0">
+        <div class="p-8 bg-blue-900 relative overflow-hidden flex items-center jusitfy-center">
+          <div
+            class="bg-blue-900 flex-auto top-0 left-0 absolute transform duration-300 testonomial text-center text-gray-300 p-8 w-full mx-auto"
+          >
+            <img
+              src="assets/Mentor-images/yuvraj.jpeg"
+              alt="profileImg"
+              class="mx-auto rounded-full border-8 h-40 w-40 object-cover border-white"
+            />
+            <blockquote class="mt-6 text-lg">
+              I am passionate about building excellent software that improves
+              the lives of those around me. I specialize in creating software
+              for clients ranging from individuals and small-businesses all the
+              way to large enterprise corporations.
+            </blockquote>
+            <div class="flex justify-center my-4">
+              <a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png"
+              /></a>
+              <a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png"
+              /></a>
+            </div>
+            <p class="text-lg font-semibold">Yuvraj Singh</p>
+            <p class="text-sm">Full Stack Developer</p>
+          </div>
+          <div 
+            class="bg-blue-900 flex-auto top-0 left-0 absolute transform duration-300 testonomial text-center text-gray-300 p-8 w-full mx-auto"
+          >
+            <img
+              src="assets/Mentor-images/dev3.jpeg"
+              alt="profileImg"
+              class="mx-auto rounded-full border-8 h-40 w-40 object-cover border-white"
+            />
+            <blockquote class="mt-6 text-lg">
+              I'm a full stack developer with a focus on the MERN stack, exploring other technologies and frameworks that catch my interest!
+            </blockquote>
+            <div class="flex justify-center my-4">
+              <a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png"
+              /></a>
+              <a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png" /></a
+              ><a href="#" class="my-auto mx-2" target="_self"
+                ><img
+                  alt="Star"
+                  class="my-auto mx-2"
+                  src="/assets/Icon-images/star.png"
+              /></a>
+            </div>
+            <p class="text-lg font-semibold">Saurabh Kumar</p>
+            <p class="text-sm">Full Stack Developer</p>
+          </div>
+        </div>
+        <div class="bg-blue-950 text-left text-white px-8 py-16 lg:p-16">
+          <p class="font-semibold text-2xl"></p>
+          <p class="text-4xl font-semibold">
+            We help you to grow your business
+            <span class="italic font-experience">Exponentially</span>
+          </p>
+          <hr class="bg-white rounded-b-full p-0.5 w-12 mt-4" />
+          <div>
+            <div class="flex justify-between mt-12">
+              <p>90%</p>
+              <p>UI/UX Design</p>
+            </div>
+            <div class="flex mt-2 items-center">
+              <hr class="p-1 bg-blue-600 w-5/6 border-none" />
+              <span
+                class="rounded-full h-4 w-4 bg-blue-600 border-2 border-white"
+              ></span>
+              <hr class="p-1 bg-white w-1/6 border-none" />
+            </div>
+            <div class="flex justify-between mt-12">
+              <p>80%</p>
+              <p>App Development</p>
+            </div>
+            <div class="flex mt-2 items-center">
+              <hr class="p-1 bg-blue-600 w-3/4 border-none" />
+              <span
+                class="rounded-full h-4 w-4 bg-blue-600 border-2 border-white"
+              ></span>
+              <hr class="p-1 bg-white w-1/4 border-none" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact">
+      <div class="bg-blue-900 py-12 mt-4">
+        <div
+          class="flex md:flex-row md:justify-between max-w-screen-xl mx-auto items-center px-5 xl:px-8 flex-col"
+        >
+          <div class="flex flex-row items-center">
+            <a
+              href="https://goo.gl/maps/cn7CnGxzd6P9Mcuo7"
+              class="flex flex-row items-center text-white"
+              target="_blank"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <p class="text-gray-200 ml-2">
+                T-06, 4th Floor, MPV Tower, A7, Sector 10, Noida, U.P.-201301
+              </p></a
+            >
+          </div>
+          <div class="my-5 md:my-0">
+            <img alt="logo" class="w-[260px]" src="/assets/Logo/logo (1).png" />
+          </div>
+          <div>
+            <a href="mailto:sales@innotechteam.in"
+              ><button
+                class="border text-white border-white mx-auto text-base h-12 px-3 p-1.5 transform duration-500 hover:bg-white hover:text-black font-semibold"
+              >
+                sales@innotechteam.in
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script
       src="https://kit.fontawesome.com/80b9f8ab25.js"
       crossorigin="anonymous"
     ></script>
-    <script src="/index.js"></script>
+    <script src="javascript/hamBurger.js"></script>
+    <script src="javascript/homeSlider.js"></script>
+    <script src="javascript/servicesBoxSlider.js"></script>
+    <script src="javascript/testonomialSlider.js"></script>
   </body>
 </html>
